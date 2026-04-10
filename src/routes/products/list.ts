@@ -4,8 +4,8 @@ import { listProducts } from "../../business-logic/products/index.js";
 export const listProductsRoute = {
     method: 'GET',
     url: '/products',
-    handler: (req: Request, res: Response) => {
-        const products = listProducts();
+    handler: async (req: Request, res: Response) => {
+        const products = await listProducts();
         res.json({ products });
     }
 }

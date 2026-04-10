@@ -10,5 +10,8 @@ export const loadEnv = () => {
     APP_HOST: str({ default: 'localhost' }),
     APP_PORT: port({ default: 8000 }),
     LOG_LEVEL: str({ choices: ['trace', 'debug', 'info', 'warn', 'error', 'fatal'], default: 'info' }),
+
+    MONGODB_URI: str({ default: 'mongodb://localhost:27017' }),
+    DATABASE_NAME: str({ default: 'orvix' }),
   });
 }
