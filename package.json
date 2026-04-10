@@ -25,5 +25,13 @@
     "express": "^5.2.1",
     "fastify": "^5.8.4",
     "pino": "^10.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevobit/orvix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nevobit/orvix/issues"
+  },
+  "homepage": "https://github.com/nevobit/orvix#readme"
 }

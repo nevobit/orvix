@@ -3,12 +3,22 @@ import { opsRoutes } from "./ops/index.js";
 import type { RouteOptions } from "../server/types.js";
 import type { Express } from "express";
 import { productsRoutes } from "./products/index.js";
+import { banksRoutes } from "./banks/index.js";
+import {bookingsRoutes} from "./bookings/index.js"
+import {categorieRoutes} from "./categories/index.js"
+import {contactRoutes} from "./contacts/index.js"
+import {usersRoutes} from "./users/index.js"
 
 const router = Router();
 
 const routes = [
   ...opsRoutes,
   ...productsRoutes,
+  ...banksRoutes,
+  ...bookingsRoutes,
+  ...usersRoutes,
+  ...contactRoutes,
+  ...categorieRoutes
 ];
 
 export const registerRoutes = (server: Express ): Router => {
